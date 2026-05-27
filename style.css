@@ -178,4 +178,45 @@ footer a {
         display: inline-block;
         margin-bottom: 10px;
     }
+.resume-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.resume-location {
+    color: #4b5563;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.resume-link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: #eef2f7;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1px solid #dbe3ef;
+}
+
+.resume-link-button:hover {
+    background: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.resume-link-button.primary {
+    background: var(--blue);
+    color: white;
+    border-color: var(--blue);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.22);
+}
+    
+
 }
