@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Power BI Projects | Camry Chapman</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+        Reports | Camry Chapman
+    </title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- PLOTLY -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 
     <style>
 
@@ -85,6 +97,16 @@
             transform: translateY(-4px);
         }
 
+        .dashboard-card.featured-chart {
+            grid-column: 1 / -1;
+        }
+
+        .chart-container {
+            height: 500px;
+            width: 100%;
+            padding: 10px 20px 0 10px;
+        }
+
         .dashboard-image {
             height: 210px;
             background:
@@ -162,21 +184,43 @@
         }
 
     </style>
+
 </head>
 
 <body>
 
     <header>
 
-        <h1>Camry Chapman</h1>
+        <h1>
+            Camry Chapman
+        </h1>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="leadership.html">Leadership Philosophy</a>
-            <a href="blog.html">Blog</a>
-            <a href="articles.html">Articles</a>
-            <a href="powerbi.html">Power BI Projects</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="resume.html">
+                Resume
+            </a>
+
+            <a href="leadership.html">
+                Leadership Philosophy
+            </a>
+
+            <a href="blog.html">
+                Blog
+            </a>
+
+            <a href="articles.html">
+                Articles
+            </a>
+
+            <a href="powerbi.html">
+                Reports
+            </a>
+
         </nav>
 
     </header>
@@ -186,20 +230,14 @@
         <section class="hero">
 
             <h2>
-                Power BI Projects & Higher Education Analytics
+                Reports & Higher Education Analytics
             </h2>
 
             <p>
-                This page will showcase interactive Power BI dashboards,
+                This page showcases interactive dashboards,
                 data storytelling projects, and higher education analytics
-                exploring enrollment trends, research funding, institutional
-                change, and the future of higher education.
-            </p>
-
-            <p>
-                Future projects will combine public higher education datasets,
-                organizational insights, and visual analytics to better understand
-                the changing landscape of colleges and universities.
+                exploring enrollment trends, research funding,
+                institutional change, and the future of higher education.
             </p>
 
         </section>
@@ -208,10 +246,11 @@
 
             <!-- ENROLLMENT -->
 
-            <section class="dashboard-card">
+            <section class="dashboard-card featured-chart">
 
-                <div class="dashboard-image">
-                    Enrollment Dashboard Placeholder
+                <div
+                    id="enrollmentChart"
+                    class="chart-container">
                 </div>
 
                 <div class="dashboard-content">
@@ -221,20 +260,22 @@
                     </h3>
 
                     <p>
-                        Future dashboard exploring enrollment declines,
-                        demographic shifts, online learning growth,
-                        and regional higher education trends.
+                        Interactive visualization of total U.S.
+                        higher education enrollment trends using
+                        IPEDS enrollment data.
                     </p>
 
-                    <span class="tag">IPEDS</span>
-                    <span class="tag">Enrollment</span>
-                    <span class="tag">Demographics</span>
+                    <span class="tag">
+                        IPEDS
+                    </span>
 
-                    <br>
+                    <span class="tag">
+                        Enrollment
+                    </span>
 
-                    <a href="#" class="dashboard-button">
-                        Coming Soon
-                    </a>
+                    <span class="tag">
+                        National Trends
+                    </span>
 
                 </div>
 
@@ -255,14 +296,22 @@
                     </h3>
 
                     <p>
-                        Future Power BI project analyzing federal research funding,
-                        institutional growth, sponsor distribution, and long-term
-                        trends across research universities.
+                        Future project analyzing federal research funding,
+                        institutional growth, sponsor distribution,
+                        and long-term trends across research universities.
                     </p>
 
-                    <span class="tag">NSF</span>
-                    <span class="tag">NIH</span>
-                    <span class="tag">Research</span>
+                    <span class="tag">
+                        NSF
+                    </span>
+
+                    <span class="tag">
+                        NIH
+                    </span>
+
+                    <span class="tag">
+                        Research
+                    </span>
 
                     <br>
 
@@ -290,13 +339,22 @@
 
                     <p>
                         Future dashboard exploring institutional closures,
-                        mergers, demographic pressures, financial challenges,
-                        and geographic trends within higher education.
+                        mergers, demographic pressures,
+                        financial challenges, and geographic trends
+                        within higher education.
                     </p>
 
-                    <span class="tag">Closures</span>
-                    <span class="tag">Finance</span>
-                    <span class="tag">Higher Ed</span>
+                    <span class="tag">
+                        Closures
+                    </span>
+
+                    <span class="tag">
+                        Finance
+                    </span>
+
+                    <span class="tag">
+                        Higher Ed
+                    </span>
 
                     <br>
 
@@ -319,10 +377,107 @@
         </p>
 
         <p>
-            Built locally using VS Code, HTML, CSS, and Power BI.
+            Built locally using VS Code, HTML, CSS, and Plotly.js.
         </p>
 
     </footer>
 
+    <!-- PLOTLY -->
+
+    <script>
+
+        const years = [
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+        ];
+
+        const enrollment = [
+            19795187,
+            19840574,
+            19827945,
+            19860117,
+            19915994,
+            19410189,
+            19103393,
+            19149864,
+            19702400,
+            20357226
+        ];
+
+        const enrollmentTrace = {
+
+            x: years,
+
+            y: enrollment,
+
+            type: "scatter",
+
+            mode: "lines+markers",
+
+            line: {
+                width: 4
+            },
+
+            marker: {
+                size: 7
+            },
+
+            hovertemplate:
+                "<b>Year:</b> %{x}<br>" +
+                "<b>Enrollment:</b> %{y:,}<extra></extra>"
+
+        };
+
+        const enrollmentLayout = {
+
+            margin: {
+                t: 20,
+                r: 30,
+                b: 70,
+                l: 110
+            },
+
+            paper_bgcolor: "white",
+
+            plot_bgcolor: "white",
+
+            xaxis: {
+                title: {
+                    text: "Year",
+                    standoff: 15
+                },
+                tickmode: "linear",
+                dtick: 1
+            },
+
+            yaxis: {
+                title: {
+                    text: "Students",
+                    standoff: 20
+                },
+                tickformat: ",",
+                automargin: true
+            }
+
+        };
+
+        Plotly.newPlot(
+            "enrollmentChart",
+            [enrollmentTrace],
+            enrollmentLayout,
+            { responsive: true }
+        );
+
+    </script>
+
 </body>
+
 </html>
