@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power BI Projects | Camry Chapman</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 35px 10%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 50px 10%;
+        }
+
+        .hero {
+            background: white;
+            padding: 45px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-size: 2.3rem;
+            color: #111827;
+        }
+
+        .hero p {
+            max-width: 850px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .dashboard-card {
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .dashboard-image {
+            height: 210px;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(37,99,235,0.12),
+                    rgba(16,185,129,0.12)
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .dashboard-content {
+            padding: 28px;
+        }
+
+        .dashboard-content h3 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .dashboard-content p {
+            color: #4b5563;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            padding: 5px 10px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            margin-right: 8px;
+            margin-top: 10px;
+        }
+
+        .dashboard-button {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 18px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+            font-weight: bold;
+        }
+
+        .dashboard-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            background-color: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+
+            header,
+            .container {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero {
+                padding: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Camry Chapman</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="leadership.html">Leadership Philosophy</a>
+            <a href="blog.html">Blog</a>
+            <a href="articles.html">Articles</a>
+            <a href="powerbi.html">Power BI Projects</a>
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <section class="hero">
+
+            <h2>
+                Power BI Projects & Higher Education Analytics
+            </h2>
+
+            <p>
+                This page will showcase interactive Power BI dashboards,
+                data storytelling projects, and higher education analytics
+                exploring enrollment trends, research funding, institutional
+                change, and the future of higher education.
+            </p>
+
+            <p>
+                Future projects will combine public higher education datasets,
+                organizational insights, and visual analytics to better understand
+                the changing landscape of colleges and universities.
+            </p>
+
+        </section>
+
+        <div class="dashboard-grid">
+
+            <!-- ENROLLMENT -->
+
+            <section class="dashboard-card">
+
+                <div class="dashboard-image">
+                    Enrollment Dashboard Placeholder
+                </div>
+
+                <div class="dashboard-content">
+
+                    <h3>
+                        National Enrollment Trends
+                    </h3>
+
+                    <p>
+                        Future dashboard exploring enrollment declines,
+                        demographic shifts, online learning growth,
+                        and regional higher education trends.
+                    </p>
+
+                    <span class="tag">IPEDS</span>
+                    <span class="tag">Enrollment</span>
+                    <span class="tag">Demographics</span>
+
+                    <br>
+
+                    <a href="#" class="dashboard-button">
+                        Coming Soon
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- RESEARCH -->
+
+            <section class="dashboard-card">
+
+                <div class="dashboard-image">
+                    Research Funding Dashboard Placeholder
+                </div>
+
+                <div class="dashboard-content">
+
+                    <h3>
+                        Research Funding Trends
+                    </h3>
+
+                    <p>
+                        Future Power BI project analyzing federal research funding,
+                        institutional growth, sponsor distribution, and long-term
+                        trends across research universities.
+                    </p>
+
+                    <span class="tag">NSF</span>
+                    <span class="tag">NIH</span>
+                    <span class="tag">Research</span>
+
+                    <br>
+
+                    <a href="#" class="dashboard-button">
+                        Coming Soon
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- CLOSURES -->
+
+            <section class="dashboard-card">
+
+                <div class="dashboard-image">
+                    Institutional Closures Dashboard Placeholder
+                </div>
+
+                <div class="dashboard-content">
+
+                    <h3>
+                        College Closures & Mergers
+                    </h3>
+
+                    <p>
+                        Future dashboard exploring institutional closures,
+                        mergers, demographic pressures, financial challenges,
+                        and geographic trends within higher education.
+                    </p>
+
+                    <span class="tag">Closures</span>
+                    <span class="tag">Finance</span>
+                    <span class="tag">Higher Ed</span>
+
+                    <br>
+
+                    <a href="#" class="dashboard-button">
+                        Coming Soon
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 Camry Chapman
+        </p>
+
+        <p>
+            Built locally using VS Code, HTML, CSS, and Power BI.
+        </p>
+
+    </footer>
+
+</body>
+</html>
