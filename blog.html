@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Camry Chapman</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 35px 10%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+            padding: 50px 10%;
+        }
+
+        .hero,
+        .post-placeholder {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #111827;
+        }
+
+        .post-placeholder h3 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .placeholder-note {
+            color: #6b7280;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e0ecff;
+            color: #1d4ed8;
+            padding: 5px 10px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            margin-right: 8px;
+            margin-top: 10px;
+        }
+
+        .draft-button {
+            display: inline-block;
+            margin-top: 18px;
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .draft-button:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header,
+            .container {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero,
+            .post-placeholder {
+                padding: 25px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Camry Chapman</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="leadership.html">Leadership Philosophy</a>
+            <a href="blog.html">Blog</a>
+            <a href="articles.html">Articles</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section class="hero">
+            <h2>Blog & Reflections</h2>
+
+            <p>
+                This space will hold future reflections on leadership, data,
+                higher education, organizational change, career growth, and the
+                human side of technology.
+            </p>
+
+            <p>
+                I am using this page as a placeholder while I develop original blog posts.
+            </p>
+        </section>
+
+        <article class="post-placeholder">
+            <h3>Blog Post Title</h3>
+
+            <p class="placeholder-note">
+                Placeholder for a future post.
+            </p>
+
+            <p>
+                Use this section to write a short preview of the post. You can describe
+                the question, idea, or experience you want to explore.
+            </p>
+
+            <span class="tag">Topic</span>
+            <span class="tag">Category</span>
+            <span class="tag">Draft</span>
+
+            <br>
+
+            <a class="draft-button" href="#">Coming soon →</a>
+        </article>
+
+        <article class="post-placeholder">
+            <h3>Blog Post Title</h3>
+
+            <p class="placeholder-note">
+                Placeholder for a future post.
+            </p>
+
+            <p>
+                Use this section to draft another future reflection. Replace this text
+                with your own description when you are ready.
+            </p>
+
+            <span class="tag">Topic</span>
+            <span class="tag">Category</span>
+            <span class="tag">Draft</span>
+
+            <br>
+
+            <a class="draft-button" href="#">Coming soon →</a>
+        </article>
+
+        <article class="post-placeholder">
+            <h3>Blog Post Title</h3>
+
+            <p class="placeholder-note">
+                Placeholder for a future post.
+            </p>
+
+            <p>
+                This can become a third blog preview, reflection, or draft idea.
+                You can duplicate this block whenever you want to add another post.
+            </p>
+
+            <span class="tag">Topic</span>
+            <span class="tag">Category</span>
+            <span class="tag">Draft</span>
+
+            <br>
+
+            <a class="draft-button" href="#">Coming soon →</a>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Camry Chapman</p>
+        <p>Built locally using VS Code, HTML, and CSS.</p>
+    </footer>
+
+</body>
+</html>
