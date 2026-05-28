@@ -559,9 +559,6 @@ footer a {
     border-bottom: 1px solid #e5e7eb;
 }
 
-.work-item:first-child {
-    border-top: 1px solid #e5e7eb;
-}
 
 .work-item h3 {
     margin-top: 0;
