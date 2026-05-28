@@ -44,9 +44,15 @@
             </p>
 
             <div class="button-group">
-                <a class="button" href="mailto:camry.chapman@gmail.com">
+                <a class="button" id="consult-email-1">
                     Start a Conversation
                 </a>
+                <script>
+                    (function() {
+                        var e = 'camry.chapman' + '@' + 'gmail' + '.com';
+                        document.getElementById('consult-email-1').href = 'mailto:' + e;
+                    })();
+                </script>
             </div>
         </section>
 
@@ -191,9 +197,15 @@
                     is working on.
                 </p>
 
-                <a class="button" href="mailto:camry.chapman@gmail.com">
+                <a class="button" id="consult-email-2">
                     Contact Me
                 </a>
+                <script>
+                    (function() {
+                        var e = 'camry.chapman' + '@' + 'gmail' + '.com';
+                        document.getElementById('consult-email-2').href = 'mailto:' + e;
+                    })();
+                </script>
             </div>
         </section>
 

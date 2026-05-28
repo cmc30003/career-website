@@ -52,9 +52,15 @@
 
                     <br>
 
-                    <a href="mailto:camry.chapman@gmail.com">
-                        camry.chapman@gmail.com
-                    </a>
+                    <a id="resume-email"></a>
+                    <script>
+                        (function() {
+                            var a = document.getElementById('resume-email');
+                            var e = 'camry.chapman' + '@' + 'gmail' + '.com';
+                            a.href = 'mailto:' + e;
+                            a.textContent = e;
+                        })();
+                    </script>
                 </p>
 
             </div>
