@@ -29,15 +29,18 @@ Products & prices:
 
 ## Blog Publishing Process
 
-### Writing a new post
+### Writing a new post — checklist
 1. Write the post (can draft here and refine together)
 2. Create file at: posts/your-post-slug.html
    - Copy the structure from posts/ai-website.html
    - Update: <title>, <meta name="description">, og:title, og:description, og:url
    - Update: <h2> post title, <p class="post-meta"> date, tags, and post body
+   - Update: JSON-LD BlogPosting headline, description, datePublished, url
 3. Add a preview card to blog.html (copy an existing article.post-placeholder block)
 4. Add a card to the Blog section on index.html
-5. Commit and push → GitHub Pages deploys automatically
+5. Add the new URL to sitemap.xml (copy an existing <url> block, update <loc> and <lastmod>)
+6. Commit and push → GitHub Pages deploys automatically (~2 min)
+7. In Google Search Console → URL Inspection → paste new post URL → Request Indexing
 
 ### Post file template (key head tags to update)
 ```html
