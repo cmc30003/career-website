@@ -22,7 +22,7 @@
   --font:  'Inter', system-ui, Arial, sans-serif;
   --mono:  ui-monospace, 'Fira Code', 'Cascadia Code', monospace;
 
-  --section-pad: clamp(60px, 8vw, 100px);
+  --section-pad: clamp(44px, 5vw, 72px);
   --container:   1100px;
   --gap:         clamp(16px, 3vw, 28px);
 
@@ -239,6 +239,18 @@ ul  { list-style: none; padding: 0; }
 /* ============================================================
    UTILITY
    ============================================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .eyebrow {
   display: inline-block;
   font-size: 0.75rem;
@@ -297,7 +309,7 @@ ul  { list-style: none; padding: 0; }
 .hero-dark {
   background: var(--navy);
   color: white;
-  padding: clamp(80px, 12vw, 140px) 0 clamp(80px, 10vw, 120px);
+  padding: clamp(60px, 8vw, 100px) 0 clamp(56px, 7vw, 88px);
   position: relative;
   overflow: hidden;
 }
@@ -425,7 +437,7 @@ ul  { list-style: none; padding: 0; }
 .stats-bar {
   background: var(--surface-alt);
   border-bottom: 1px solid var(--border);
-  padding: 52px 0;
+  padding: 36px 0;
 }
 
 .stats-grid {
@@ -708,7 +720,7 @@ ul  { list-style: none; padding: 0; }
    INTERNAL PAGES — PAGE HERO
    ============================================================ */
 .page-hero {
-  padding: clamp(52px, 8vw, 88px) 0 clamp(40px, 5vw, 60px);
+  padding: clamp(36px, 5vw, 64px) 0 clamp(28px, 4vw, 48px);
   border-bottom: 1px solid var(--border);
   background: var(--surface);
 }
@@ -746,11 +758,11 @@ ul  { list-style: none; padding: 0; }
    CONTENT SECTIONS (shared)
    ============================================================ */
 .page-content {
-  padding: clamp(40px, 6vw, 72px) 0;
+  padding: clamp(28px, 4vw, 48px) 0;
 }
 
 .content-section {
-  padding: 48px 0;
+  padding: 36px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -1429,7 +1441,7 @@ ul  { list-style: none; padding: 0; }
 }
 
 .post-body-wrap {
-  padding: clamp(44px, 6vw, 72px) 0;
+  padding: clamp(32px, 4vw, 52px) 0;
 }
 
 .back-link {
@@ -1510,8 +1522,23 @@ ul  { list-style: none; padding: 0; }
 @media (max-width: 768px) {
 
   .nav-links { gap: 16px; }
-  .nav-links .nav-cta { display: none; }
   .nav-links a { font-size: 0.875rem; }
+  .nav-links .nav-cta {
+    background: transparent;
+    color: var(--text-2) !important;
+    padding: 0 !important;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .nav-links .nav-cta:hover {
+    background: transparent;
+    color: var(--text) !important;
+    transform: none;
+  }
+  .nav-links .nav-cta[aria-current="page"] {
+    background: transparent !important;
+    color: var(--text) !important;
+  }
 
   .hero-cta { flex-direction: column; align-items: flex-start; }
 
