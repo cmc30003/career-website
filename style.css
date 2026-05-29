@@ -1523,6 +1523,7 @@ ul  { list-style: none; padding: 0; }
 
   .nav-links { gap: 16px; }
   .nav-links a { font-size: 0.875rem; }
+  .nav-links a[href="leadership.html"] { display: none; }
   .nav-links .nav-cta {
     background: transparent;
     color: var(--text-2) !important;
