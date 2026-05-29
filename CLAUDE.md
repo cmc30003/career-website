@@ -9,11 +9,11 @@ Personal career website for Camry Chapman — Data Leadership & Institutional Re
 
 ## Pages
 - index.html — Home
-- resume.html — Resume
+- work.html — Resume
 - leadership.html — Leadership Philosophy
 - blog.html — Blog index (post preview cards)
 - articles.html — Articles & Reading
-- powerbi.html — Reports / Dashboards
+- reports.html — Reports / Dashboards
 - consulting.html — Consulting services + Stripe packages
 - posts/ — Individual full blog post pages
 
