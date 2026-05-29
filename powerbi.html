@@ -1,227 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Interactive data dashboards and higher education analytics by Camry Chapman — featuring IPEDS enrollment trends, institutional research visualizations, and data storytelling projects." />
-    <title>Higher Education Analytics & Reports | Camry Chapman</title>
-
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- PLOTLY -->
-    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" integrity="sha384-cCVCZkAjYNxaYKbM8lsArLznDF/SvMFr1jcZrvOpSTCa0W40ZAdLzHCEulnUa5i7" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive data dashboards and higher education analytics by Camry Chapman — featuring IPEDS enrollment trends and institutional research visualizations." />
+  <title>Reports & Analytics | Camry Chapman</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" integrity="sha384-cCVCZkAjYNxaYKbM8lsArLznDF/SvMFr1jcZrvOpSTCa0W40ZAdLzHCEulnUa5i7" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-    <header>
-        <div class="header-layout">
-            <div class="header-text">
-                <h1>Camry Chapman</h1>
-                <p>Institutional Research | Data Strategy | Leadership Development</p>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="resume.html">Resume</a>
-                    <a href="leadership.html">Leadership</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="articles.html">Articles</a>
-                    <a href="powerbi.html" aria-current="page">Reports</a>
-                    <a href="consulting.html">Consulting</a>
-                </nav>
-            </div>
-            <div class="header-image" role="presentation" aria-hidden="true"></div>
-        </div>
-    </header>
+  <nav class="site-nav">
+    <div class="container">
+      <a class="nav-logo" href="index.html">Camry Chapman</a>
+      <div class="nav-links">
+        <a href="resume.html" aria-current="page">Work</a>
+        <a href="blog.html">Writing</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="consulting.html" class="nav-cta">Consulting</a>
+      </div>
+    </div>
+  </nav>
 
-    <div class="container" id="main-content">
+  <main id="main">
 
-        <section class="hero">
-
-            <h2>
-                Reports & Higher Education Analytics
-            </h2>
-
-            <p>
-                This page showcases interactive dashboards,
-                data storytelling projects, and higher education analytics
-                exploring enrollment trends, research funding,
-                institutional change, and the future of higher education.
-            </p>
-
-        </section>
-
-        <div class="dashboard-grid">
-
-            <!-- ENROLLMENT -->
-
-            <section class="dashboard-card featured-chart">
-
-                <div
-                    id="enrollmentChart"
-                    class="chart-container"
-                    role="img"
-                    aria-label="Interactive line chart showing U.S. higher education enrollment trends over time using IPEDS data">
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h3>
-                        National Enrollment Trends
-                    </h3>
-
-                    <p>
-                        Interactive visualization of total U.S.
-                        higher education enrollment trends using
-                        IPEDS enrollment data.
-                    </p>
-
-                    <span class="tag">IPEDS</span>
-                    <span class="tag">Enrollment</span>
-                    <span class="tag">National Trends</span>
-
-                </div>
-
-            </section>
-
-            <!-- RESEARCH -->
-
-            <section class="dashboard-card">
-
-                <div class="dashboard-image">
-                    Research Funding Dashboard Placeholder
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h3>
-                        Research Funding Trends
-                    </h3>
-
-                    <p>
-                        Future project analyzing federal research funding,
-                        institutional growth, sponsor distribution,
-                        and long-term trends across research universities.
-                    </p>
-
-                    <span class="tag">NSF</span>
-                    <span class="tag">NIH</span>
-                    <span class="tag">Research</span>
-
-                    <br>
-
-                    <a href="#" class="dashboard-button">
-                        Coming Soon
-                    </a>
-
-                </div>
-
-            </section>
-
-            <!-- CLOSURES -->
-
-            <section class="dashboard-card">
-
-                <div class="dashboard-image">
-                    Institutional Closures Dashboard Placeholder
-                </div>
-
-                <div class="dashboard-content">
-
-                    <h3>
-                        College Closures & Mergers
-                    </h3>
-
-                    <p>
-                        Future dashboard exploring institutional closures,
-                        mergers, demographic pressures,
-                        financial challenges, and geographic trends
-                        within higher education.
-                    </p>
-
-                    <span class="tag">Closures</span>
-                    <span class="tag">Finance</span>
-                    <span class="tag">Higher Ed</span>
-
-                    <br>
-
-                    <a href="#" class="dashboard-button">
-                        Coming Soon
-                    </a>
-
-                </div>
-
-            </section>
-
-        </div>
-
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Reports &amp; Analytics</span>
+        <h1>Data stories from higher education.</h1>
+        <p>Interactive dashboards and visualizations exploring enrollment trends, research funding, and institutional change.</p>
+      </div>
     </div>
 
-    <footer>
+    <div class="page-content">
+      <div class="container">
 
-        <p>© 2026 Camry Chapman</p>
-        <p>Built locally using HTML, CSS, VS Code, and Plotly.js.</p>
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/camry-chapman-81373a124/" target="_blank" rel="noopener noreferrer">
-                View Profile
-            </a>
-        </p>
+        <div class="report-grid">
 
-    </footer>
+          <div class="report-card report-featured">
+            <div
+              id="enrollmentChart"
+              class="chart-container"
+              role="img"
+              aria-label="Interactive line chart showing U.S. higher education enrollment trends from 2015 to 2024 using IPEDS data">
+            </div>
+            <div class="report-info">
+              <h2>National Enrollment Trends</h2>
+              <p>Total U.S. higher education enrollment from 2015–2024, using IPEDS data. Shows the COVID-era contraction and the recovery beginning in 2022.</p>
+              <div class="report-tags">
+                <span class="tag tag-accent">IPEDS</span>
+                <span class="tag">Enrollment</span>
+                <span class="tag">National Trends</span>
+              </div>
+            </div>
+          </div>
 
-    <!-- PLOTLY -->
+          <div class="report-card">
+            <div class="report-placeholder-img" aria-hidden="true">Coming Soon</div>
+            <div class="report-info">
+              <h2>Research Funding Trends</h2>
+              <p>Federal research funding, institutional growth, sponsor distribution, and long-term trends across research universities.</p>
+              <div class="report-tags">
+                <span class="tag">NSF</span>
+                <span class="tag">NIH</span>
+                <span class="tag">Research</span>
+              </div>
+            </div>
+          </div>
 
-    <script>
+          <div class="report-card">
+            <div class="report-placeholder-img" aria-hidden="true">Coming Soon</div>
+            <div class="report-info">
+              <h2>College Closures &amp; Mergers</h2>
+              <p>Institutional closures, mergers, demographic pressures, financial challenges, and geographic trends within higher education.</p>
+              <div class="report-tags">
+                <span class="tag">Closures</span>
+                <span class="tag">Finance</span>
+                <span class="tag">Higher Ed</span>
+              </div>
+            </div>
+          </div>
 
-        const years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
+        </div>
 
-        const enrollment = [
-            19795187, 19840574, 19827945, 19860117, 19915994,
-            19410189, 19103393, 19149864, 19702400, 20357226
-        ];
+      </div>
+    </div>
 
-        const enrollmentTrace = {
-            x: years,
-            y: enrollment,
-            type: "scatter",
-            mode: "lines+markers",
-            line: { width: 4 },
-            marker: { size: 7 },
-            hovertemplate:
-                "<b>Year:</b> %{x}<br>" +
-                "<b>Enrollment:</b> %{y:,}<extra></extra>"
-        };
+  </main>
 
-        const enrollmentLayout = {
-            margin: { t: 20, r: 30, b: 70, l: 110 },
-            paper_bgcolor: "white",
-            plot_bgcolor: "white",
-            xaxis: {
-                title: { text: "Year", standoff: 15 },
-                tickmode: "linear",
-                dtick: 1
-            },
-            yaxis: {
-                title: { text: "Students", standoff: 20 },
-                tickformat: ",",
-                automargin: true
-            }
-        };
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>Camry Chapman</strong>
+          <p>Data leadership &amp; consulting for higher education.</p>
+        </div>
+        <div class="footer-links">
+          <a href="resume.html">Work</a>
+          <a href="blog.html">Writing</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="consulting.html">Consulting</a>
+          <a href="https://www.linkedin.com/in/camry-chapman-81373a124/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 Camry Chapman · Atlanta, Georgia · Built with Plotly.js</p>
+    </div>
+  </footer>
 
-        Plotly.newPlot(
-            "enrollmentChart",
-            [enrollmentTrace],
-            enrollmentLayout,
-            { responsive: true }
-        );
+  <script>
+    const years = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
+    const enrollment = [
+      19795187, 19840574, 19827945, 19860117, 19915994,
+      19410189, 19103393, 19149864, 19702400, 20357226
+    ];
 
-    </script>
+    const enrollmentTrace = {
+      x: years,
+      y: enrollment,
+      type: 'scatter',
+      mode: 'lines+markers',
+      line: { color: '#0d9488', width: 3 },
+      marker: { color: '#0d9488', size: 7 },
+      hovertemplate: '<b>%{x}</b><br>%{y:,} students<extra></extra>'
+    };
+
+    const enrollmentLayout = {
+      margin: { t: 24, r: 32, b: 64, l: 100 },
+      paper_bgcolor: 'white',
+      plot_bgcolor: 'white',
+      font: { family: 'Inter, system-ui, sans-serif', color: '#44403c' },
+      xaxis: {
+        title: { text: 'Year', standoff: 14, font: { size: 13 } },
+        tickmode: 'linear',
+        dtick: 1,
+        gridcolor: '#f5f5f4'
+      },
+      yaxis: {
+        title: { text: 'Students Enrolled', standoff: 18, font: { size: 13 } },
+        tickformat: ',',
+        automargin: true,
+        gridcolor: '#f5f5f4'
+      }
+    };
+
+    Plotly.newPlot('enrollmentChart', [enrollmentTrace], enrollmentLayout, { responsive: true });
+  </script>
 
 </body>
-
 </html>
