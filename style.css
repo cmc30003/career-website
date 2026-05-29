@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 :root {
     --navy: #1f2937;
     --deep-blue: #1d4ed8;
@@ -17,10 +19,9 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', system-ui, Arial, sans-serif;
     background:
         radial-gradient(circle at top left, #dbeafe 0, transparent 28%),
-        radial-gradient(circle at bottom right, #fef3c7 0, transparent 25%),
         var(--soft-gray);
     color: var(--text);
     line-height: 1.7;
@@ -104,6 +105,11 @@ nav a {
 }
 
 nav a:hover {
+    color: var(--sky);
+    border-bottom: 2px solid var(--accent);
+}
+
+nav a[aria-current="page"] {
     color: var(--sky);
     border-bottom: 2px solid var(--accent);
 }
