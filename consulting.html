@@ -32,14 +32,8 @@
         <h1>Let's fix your data problems.</h1>
         <p>I help colleges and universities build reliable data systems, modernize reporting, and develop the capacity their teams need to make confident decisions.</p>
         <div class="page-hero-meta">
-          <a class="btn btn-primary" id="consult-email-hero" href="#" aria-label="Start a conversation — email Camry Chapman">Start a Conversation</a>
+          <a class="btn btn-primary" href="#contact">Start a Conversation</a>
         </div>
-        <script>
-          (function() {
-            var e = 'camry.chapman' + '@' + 'gmail' + '.com';
-            document.getElementById('consult-email-hero').href = 'mailto:' + e;
-          })();
-        </script>
       </div>
     </div>
 
@@ -205,16 +199,28 @@
           </div>
         </div>
 
-        <div class="content-section">
+        <div class="content-section" id="contact">
           <div class="cta-box">
             <h2>Ready to start a conversation?</h2>
             <p>I'm currently available for consulting engagements with colleges, universities, and schools. Tell me what your institution is working on.</p>
-            <a class="btn btn-primary" id="consult-email-cta" href="#" aria-label="Contact Camry Chapman">Contact Me</a>
+            <form class="contact-form" action="GOOGLE_FORM_ACTION" method="POST" target="contact-hidden-frame" onsubmit="showContactThanks()">
+              <div class="contact-row">
+                <label>Name<input type="text" name="ENTRY_NAME" autocomplete="name" required /></label>
+                <label>Email<input type="email" name="ENTRY_EMAIL" autocomplete="email" required /></label>
+              </div>
+              <label>Institution or organization<input type="text" name="ENTRY_ORG" autocomplete="organization" /></label>
+              <label>What are you working on?<textarea name="ENTRY_MESSAGE" rows="5" required></textarea></label>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <p class="contact-thanks" id="contact-thanks" role="status" hidden>Thanks — your message is on its way. I'll reply within a few business days.</p>
+            <iframe name="contact-hidden-frame" title="Form submission" hidden></iframe>
             <script>
-              (function() {
-                var e = 'camry.chapman' + '@' + 'gmail' + '.com';
-                document.getElementById('consult-email-cta').href = 'mailto:' + e;
-              })();
+              function showContactThanks() {
+                setTimeout(function () {
+                  document.querySelector('.contact-form').hidden = true;
+                  document.getElementById('contact-thanks').hidden = false;
+                }, 400);
+              }
             </script>
           </div>
         </div>

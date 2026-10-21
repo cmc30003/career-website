@@ -1572,3 +1572,58 @@ ul  { list-style: none; padding: 0; }
   .package-grid { grid-template-columns: 1fr; }
   .principles-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   CONTACT FORM (consulting page)
+   ============================================================ */
+.contact-form {
+  display: grid;
+  gap: 16px;
+  max-width: 640px;
+}
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+}
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  width: 100%;
+}
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.contact-form button {
+  justify-self: start;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+.cta-box .contact-thanks {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .contact-row { grid-template-columns: 1fr; }
+  .contact-form button { justify-self: stretch; }
+}
